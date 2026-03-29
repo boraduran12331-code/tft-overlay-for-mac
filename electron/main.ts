@@ -437,8 +437,6 @@ function setupIPC() {
 // ─── App Lifecycle ──────────────────────────────────────
 app.whenReady().then(async () => {
   _settings = loadSettings()
-  // Always update to latest key on startup
-  setRiotApiKey('RGAPI-c991525d-6009-488a-9286-9c99cc50312d')
   _settings.riotRegion = _settings.riotRegion || 'TR'
   saveSettings(_settings)
 
